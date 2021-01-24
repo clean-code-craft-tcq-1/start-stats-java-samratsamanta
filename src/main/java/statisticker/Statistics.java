@@ -9,9 +9,9 @@ public class Statistics
     }
    
     public static Stats getStatistics(List<Float> numbers) {
-        Stat.average=avg(numbers);
-        Stat.max=maximun(numbers);
-        Stat.min=minimum(numbers);        
+        Stats.average=avg(numbers);
+        Stats.max=maximun(numbers);
+        Stats.min=minimum(numbers);        
     }
     private static Float avg(List<Float> numbers){
         return 0.1;
