@@ -1,6 +1,6 @@
 package statisticker;
 
-import java.util.List;
+import java.util.*;
 
 public class Statistics 
 {
@@ -20,8 +20,7 @@ public class Statistics
             for (Float mark : marks) {
                 sum += mark;
             }
-            Float val=sum/marks.size();
-            return val;
+            return sum/marks.size();
         }
         return sum;
     }
