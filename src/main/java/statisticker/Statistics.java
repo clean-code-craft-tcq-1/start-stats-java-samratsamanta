@@ -4,14 +4,16 @@ import java.util.List;
 
 public class Statistics 
 {
-    static class Stats{
-         public static Float average,max,min;
+    class Stats{
+         public Float average,max,min;
     }
    
     public static Stats getStatistics(List<Float> numbers) {
-        Stats.average=avg(numbers);
-        Stats.max=maximun(numbers);
-        Stats.min=minimum(numbers);        
+        Stats s=new Stats();
+        s.average=avg(numbers);
+        s.max=maximun(numbers);
+        s.min=minimum(numbers);
+        return s;
     }
     private static Float avg(List<Float> numbers){
         return 0.1f;
