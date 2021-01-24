@@ -1,6 +1,7 @@
 package statisticker;
 
-import java.util.*;
+import java.util.List;
+import java.util.Collection;
 
 public class Statistics 
 {
