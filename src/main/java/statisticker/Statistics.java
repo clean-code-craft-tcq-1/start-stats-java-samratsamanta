@@ -14,12 +14,12 @@ public class Statistics
         Stats.min=minimum(numbers);        
     }
     private static Float avg(List<Float> numbers){
-        return 0.1;
+        return 0.1f;
     }
     private static Float maximun(List<Float> numbers){
-        return 0.1;
+        return 0.1f;
     }
     private static Float minimum(List<Float> numbers){
-        return 0.1;
+        return 0.1f;
     }
 }
