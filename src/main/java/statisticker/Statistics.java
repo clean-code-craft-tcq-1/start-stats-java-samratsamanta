@@ -8,18 +8,18 @@ public class Statistics
          public Float average,max,min;
     }
    
-    public static Stats getStatistics(List<___> numbers) {
+    public static Stats getStatistics(List<Float> numbers) {
         Stat.average=avg(numbers);
         Stat.max=maximun(numbers);
         Stat.min=minimum(numbers);        
     }
-    private static Float avg(List<___> numbers){
+    private static Float avg(List<Float> numbers){
         return 0.1;
     }
-    private static Float maximun(List<___> numbers){
+    private static Float maximun(List<Float> numbers){
         return 0.1;
     }
-    private static Float minimum(List<___> numbers){
+    private static Float minimum(List<Float> numbers){
         return 0.1;
     }
 }
