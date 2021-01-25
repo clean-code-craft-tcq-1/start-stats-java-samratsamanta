@@ -1,10 +1,35 @@
+
 package statisticker;
 
 import java.util.List;
+import java.util.Collection;
 
 public class Statistics 
 {
-    public static Stats getStatistics(List<___> numbers) {
-        //implement the computation of statistics here
+ class Stats{
+     public Float average,max,min;
+ }
+ public Stats getStatistics(List<Float> numbers) {
+        Stats s=new Stats();
+        s.average=avg(numbers);
+        s.max=maximun(numbers);
+        s.min=minimum(numbers);
+        return s;
+    }
+    private static Float avg(List<Float> marks){
+        Float sum = 0f;
+        if(!marks.isEmpty()) {
+            for (Float mark : marks) {
+                sum += mark;
+            }
+            return sum/marks.size();
+        }
+        return sum;
+    }
+    private static Float maximun(List<Float> numbers){
+        return Collection.max(numbers);
+    }
+    private static Float minimum(List<Float> numbers){
+        return Collection.min(numbers);
     }
 }
