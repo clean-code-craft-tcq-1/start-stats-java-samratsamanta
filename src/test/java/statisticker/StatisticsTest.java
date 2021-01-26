@@ -30,10 +30,10 @@ public class StatisticsTest
         List<Float> emptyList = new ArrayList<Float>();
 
         Statistics.Stats s = Statistics.getStatistics(emptyList);
-        float epsilon = 0.001f;
-        assertEquals(s.average, Float.NaN);
-        assertEquals(s.min, Float.NaN);
-        assertEquals(s.max, Float.NaN);
+        
+        assertTrue(Double.isNaN(s.average));
+        assertTrue(Double.isNaN(s.min));
+        assertTrue(Double.isNaN(s.max));
         
     }/*
     @Test
