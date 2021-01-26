@@ -23,19 +23,19 @@ public class StatisticsTest
         assertEquals(s.average, 4.525f, epsilon);
         assertEquals(s.min, 1.5f, epsilon);
         assertEquals(s.max, 8.9f, epsilon);
-    }/*
+    }
     @Test
     public void reportsNaNForEmptyInput()
     {
         List<Float> emptyList = new ArrayList<Float>();
 
         Statistics.Stats s = Statistics.getStatistics(emptyList);
-
-        //All fields of computedStats (average, max, min) must be
-        //Float.NaN (not-a-number), as described in
-        //https://www.geeksforgeeks.org/nan-not-number-java/
-        //Design the asserts here and implement accordingly.
-    }
+        float epsilon = 0.001f;
+        assertEquals(s.average, Float.NaN);
+        assertEquals(s.min, Float.NaN);
+        assertEquals(s.max, Float.NaN);
+        
+    }/*
     @Test
     public void reportsAlertsIfMaxIsMoreThanThreshold()
     {

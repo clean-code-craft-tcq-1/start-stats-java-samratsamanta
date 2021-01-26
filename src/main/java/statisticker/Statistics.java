@@ -6,6 +6,11 @@ import java.util.Collections;
 public class Statistics {
 	static class Stats{
 		public static Float average, max, min;
+		public Stats() {
+			average=Float.NaN;
+			max=Float.NaN;
+			min=Float.NaN;
+		}
 	}
 
 	public static Stats getStatistics(List<Float> numbers) {
