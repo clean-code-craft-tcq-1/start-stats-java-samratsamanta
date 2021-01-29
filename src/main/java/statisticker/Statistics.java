@@ -40,38 +40,3 @@ public static class Statistics {
 		return Collections.min(numbers);
 	}
 }
-
-public class StatsChecker {
-	float maxThreshold;
-	IAlerter iAlerter[];
-
-	StatsChecker(float maxThreshold, IAlerter iAlerter[]) {
-		this.maxThreshold = maxThreshold;
-		this.iAlerter = iAlerter;
-	}
-
-	void checkAndAlert(List<Float> numberList) {
-		Stats s = Statistics.getStatistics(numberList);
-		if (s.max > maxThreshold) {
-			iAlerter[0].emailSent = true;
-			iAlerter[1].ledGlows = true;
-		}
-	}
-}
-
-public class EmailAlert extends IAlerter {
-	EmailAlert() {
-		emailSent = false;
-	}
-}
-
-public class LEDAlert extends IAlerter {
-	LEDAlert() {
-		ledGlows = false;
-	}
-}
-
-public class IAlerter {
-	public boolean ledGlows;
-	public boolean emailSent;
-}
