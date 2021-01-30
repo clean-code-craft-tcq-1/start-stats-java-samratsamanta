@@ -1,8 +1,8 @@
 package statisticker;
 
 import java.util.List;
-/*
-public static class StatsChecker {
+
+class StatsChecker {
 	float maxThreshold;
 	IAlerter iAlerter[];
 
@@ -12,10 +12,10 @@ public static class StatsChecker {
 	}
 
 	public void checkAndAlert(List<Float> numberList) {
-		Stats s = Statistics.getStatistics(numberList);
+		Statistics.Stats s = Statistics.getStatistics(numberList);
 		if (s.max > maxThreshold) {
 			iAlerter[0].emailSent = true;
 			iAlerter[1].ledGlows = true;
 		}
 	}
-}*/
+}
