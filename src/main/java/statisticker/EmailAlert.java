@@ -1,7 +1,7 @@
 package statisticker;
-
+/*
 public class EmailAlert extends IAlerter {
-	EmailAlert() {
+	public EmailAlert() {
 		emailSent = false;
 	}
-}
+}*/

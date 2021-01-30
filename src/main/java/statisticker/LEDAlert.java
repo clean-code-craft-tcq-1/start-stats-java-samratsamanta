@@ -1,7 +1,7 @@
 package statisticker;
-
+/*
 public class LEDAlert extends IAlerter {
-	LEDAlert() {
+	public LEDAlert() {
 		ledGlows = false;
 	}
-}
+}*/
