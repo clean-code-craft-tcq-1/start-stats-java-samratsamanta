@@ -46,7 +46,7 @@ public class StatisticsTest
 
         Float[] numbers = {11.5f, 6.9f, 7.5f, 6.6f};
         List<Float> numberList = Arrays.asList(numbers);
-        checker.checkAndAlert(numberList);
+        checker.checkAndAlert(numberList);  //Changed numbers(Float array) tp numberList
         
         assertTrue(emailAlerter.emailSent);
         assertTrue(ledAlerter.ledGlows);
